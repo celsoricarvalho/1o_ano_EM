@@ -1,0 +1,151 @@
+
+🖥️ MÓDULO 2: DADOS, VARIÁVEIS E OPERADORES EM PYTHON
+
+Aula 1: A Base de Tudo – Variáveis e Tipos de Dados
+
+Objetivo: Entender como guardar informações na memória do computador e os tipos
+de dados que o Python reconhece.
+
+  - O que é uma variável?
+      - Imagine uma variável como uma "caixa" com uma etiqueta (nome) onde você
+        guarda um valor.
+  - Os 4 Tipos Básicos (Primitivos):
+    1.  int (Inteiro): Números sem vírgula (Ex: 10, -5, 0).
+    2.  float (Flutuante/Real): Números com vírgula (Nota: em Python usamos
+        ponto .). (Ex: 3.14, -7.5).
+    3.  str (String/Texto): Sempre entre aspas simples ou duplas (Ex: "Maria",
+        '123').
+    4.  bool (Booleano): Verdadeiro ou Falso. Em Python, sempre com letra
+        maiúscula (True ou False).
+  - Regras de Nomenclatura (Clean Code - PEP 8):
+      - O Python usa o padrão snake_case (letras minúsculas separadas por
+        underline).
+      - Certo: nome_completo, idade_aluno.
+      - Errado: NomeCompleto, nome completo, 1idade.
+  - Mão na massa (Código):
+    nome_aluno = "Carlos"     # str
+    idade = 25                # int
+    altura = 1.75             # float
+    matriculado = True        # bool
+
+    # A função type() mostra o tipo da variável
+    print(type(nome_aluno))
+    
+  - Exercício Prático 1: Crie variáveis para representar o perfil de um
+    personagem de videogame (nome, nível, pontuação, e se está vivo ou não).
+    Imprima o tipo de cada variável usando type().
+
+Aula 2: Conversando com o Computador – Entrada e Saída
+
+Objetivo: Fazer o programa interagir com o usuário, recebendo dados do teclado e
+mostrando mensagens na tela.
+
+  - Saída de Dados (print):
+      - Como mostrar textos e variáveis juntos. A melhor forma no Python moderno
+        é usar f-strings.
+      - Exemplo: print(f"Olá {nome_aluno}, você tem {idade} anos.")
+  - Entrada de Dados (input):
+      - O comando input() pausa o programa e espera o usuário digitar algo.
+      - Regra de Ouro: Tudo que vem do input() é reconhecido como Texto
+        (String).
+  - Conversão de Tipos (Casting):
+      - Se você quiser que o usuário digite um número para fazer contas, precisa
+        converter a string para int ou float.
+  - Mão na massa (Código):
+    nome = input("Digite seu nome: ")
+    # Convertendo o texto digitado direto para inteiro
+    ano_nascimento = int(input("Em que ano você nasceu? ")) 
+
+    idade = 2024 - ano_nascimento
+    print(f"Legal, {nome}! Você tem (ou fará) {idade} anos em 2024.")
+  - Exercício Prático 2: Crie um programa que pergunte o nome de um produto e o
+    seu preço. Depois, mostre a mensagem: "O produto [NOME] custa R$ [PRECO]".
+
+Aula 3: A Calculadora – Operadores Aritméticos e de Atribuição
+
+Objetivo: Fazer o computador trabalhar para você realizando cálculos
+matemáticos.
+
+  - Operadores Aritméticos:
+      - + (Soma), - (Subtração), * (Multiplicação).
+      - / (Divisão Real - sempre devolve um float).
+      - // (Divisão Inteira - ignora as casas decimais).
+      - ** (Exponenciação - ex: 2 ** 3 = 8).
+      - % (Módulo - devolve o resto da divisão. Muito útil para saber se um
+        número é par ou ímpar).
+  - Operadores de Atribuição (Atalhos):
+      - Ao invés de escrever pontos = pontos + 10, você pode usar pontos += 10.
+  - Mão na massa (Código):
+    a = 10
+    b = 3
+    print(f"Divisão Real: {a / b}")    # 3.3333333333333335
+    print(f"Divisão Inteira: {a // b}") # 3
+    print(f"Resto (Módulo): {a % b}")   # 1 (pois 3*3=9, sobra 1)
+    
+  - Exercício Prático 3: Crie um programa que leia o valor de uma conta de
+    restaurante. Calcule e mostre: o valor dos 10% do garçom e o valor total
+    final da conta.
+
+Aula 4: O Juiz – Operadores Relacionais e Lógicos
+
+Objetivo: Ensinar o computador a comparar coisas. Esta é a base para a Aula de
+"Tomada de Decisão" (if/else) do Módulo 3.
+
+  - Operadores Relacionais (Comparações):
+      - O resultado de uma comparação é sempre um Booleano (True ou False).
+      - == (Igual a), != (Diferente de). Atenção: um sinal de igual = é
+        atribuição, dois == é comparação!
+      - > (Maior), < (Menor), >= (Maior ou igual), <= (Menor ou igual).
+  - Operadores Lógicos (Juntando comparações):
+      - and (E): Só dá True se TODAS as condições forem True.
+      - or (OU): Dá True se PELO MENOS UMA condição for True.
+      - not (NÃO): Inverte o valor (True vira False e vice-versa).
+  - Mão na massa (Código):
+    idade = 18
+    tem_cnh = True
+
+    # Para dirigir, precisa ser maior de idade E ter CNH
+    pode_dirigir = (idade >= 18) and (tem_cnh == True)
+    print(f"Pode dirigir? {pode_dirigir}")
+  - Exercício Prático 4: Crie um programa que peça um número inteiro ao usuário
+    e mostre True se o número for Par, e False se for Ímpar (Dica: use o
+    operador de módulo %).
+
+Aula 5: Desafio do Módulo – O Sistema de Notas
+
+Objetivo: Juntar tudo o que foi aprendido (Variáveis, I/O, Casting, Aritmética e
+Relacionais) em um projeto único.
+
+O Problema (Baseado em Requisitos - Metodologia SENAI): Você foi contratado para
+criar a primeira versão de um sistema escolar. O programa deve:
+
+1.  Pedir o nome do aluno.
+2.  Pedir as notas de 3 provas (podem ser números quebrados).
+3.  Pedir a nota de um trabalho extra.
+4.  Calcular a média final: A média é a soma das 3 provas dividida por 3.
+    Depois, soma-se a nota do trabalho extra a esse resultado.
+5.  Imprimir um relatório final usando f-strings.
+6.  Imprimir True se o aluno atingiu a nota mínima (7.0) e False caso não tenha
+    atingido.
+
+Dica de como ficará o terminal quando o programa rodar:
+
+Bem-vindo ao Sistema Escolar!
+Digite o nome do aluno: Lucas
+Nota da Prova 1: 6.5
+Nota da Prova 2: 7.0
+Nota da Prova 3: 6.0
+Nota do Trabalho: 1.0
+
+--- RELATÓRIO DO ALUNO ---
+Aluno: Lucas
+Média Final: 7.5
+Status de Aprovação (>=7.0): True
+
+💡 Dicas de Estudo para este Módulo:
+
+  - Não copie e cole o código. Digite tudo! O seu cérebro e seus dedos precisam
+    se acostumar com a sintaxe (os parênteses, as aspas, a indentação).
+  - Provoque erros de propósito: O que acontece se você tentar somar uma string
+    com um int ("Paulo" + 10)? Leia a mensagem de erro vermelha (TypeError).
+    Aprender a ler os erros é a habilidade mais importante de um programador.
