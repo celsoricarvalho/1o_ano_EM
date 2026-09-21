@@ -1,20 +1,23 @@
 # LOPAL
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Estudo%20e%20prática-success)
+![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-blue)
 
-Projeto de estudos e exercícios de programação em Python, realizado durante a disciplina de LOPAL.
+# Lógica de Programação e Algoritmos
 
-## 📌 Visão geral
+Repositório dedicado ao desenvolvimento das aulas de Lógica de Programação e Algoritmos, com foco em exercícios, desafios e integração entre os conteúdos ao longo do processo de aprendizagem.
 
-Este repositório reúne atividades práticas, desafios e exemplos de lógica de programação, com foco em:
+Este projeto também serve como base para organizar os conceitos estudados em diferentes aulas, conectando teoria e prática por meio de scripts em Python.
 
-- desenvolvimento em Python
-- resolução de problemas
-- estruturas de decisão e repetição
-- automação básica
-- integração com conceitos de IoT
-- aprendizagem por exercícios e desafios
+## 📌 Objetivo do repositório
+
+O objetivo principal deste repositório é:
+
+- estudar e praticar lógica de programação
+- desenvolver algoritmos de forma progressiva
+- resolver exercícios e desafios de programação
+- integrar os conteúdos das aulas em um mesmo ambiente de estudo
+- aplicar conceitos de automação e IoT em exemplos simples e didáticos
 
 ## 🧩 Estrutura do projeto
 
@@ -58,34 +61,35 @@ LOPAL/
 └── LICENSE (se existir)
 ```
 
-## 🎯 Objetivo
-
-O principal objetivo deste projeto é praticar programação em Python de forma gradual, desenvolvendo:
-
-- raciocínio lógico
-- capacidade de resolução de problemas
-- interpretação de enunciados
-- uso de condicionais, laços e funções
-- noções de automação e integração de sistemas
-
-## 📚 Conteúdo das aulas
+## 📚 Organização das aulas
 
 ### Aula 2
-A pasta `aula2` contém exercícios introdutórios e desafios focados em lógica e estrutura básica de algoritmos.
+A pasta `aula2` reúne exercícios introdutórios e desafios que ajudam a desenvolver raciocínio lógico, compreensão de problemas e estruturação inicial de algoritmos.
 
 ### Aula 3
-A pasta `aula3` inclui:
+A pasta `aula3` contém atividades mais avançadas, incluindo:
 
-- exercícios de lógica e decisão
-- desafios complementares
-- aplicações simples de controle e automação
-- scripts de integração de IoT, como monitoramento e regras de acionamento
+- condicionais e tomada de decisão
+- lógica aplicada a cenários reais
+- desafios de programação
+- exemplos de automação e integração em sistemas IoT
+
+### Integração entre as aulas
+
+A ideia central deste repositório é mostrar que os conteúdos estudados em cada aula se conectam entre si. Os conceitos aprendidos em estruturas básicas de lógica são aplicados em exercícios mais complexos e em cenários práticos, como:
+
+- controle de sensores
+- acionamento de dispositivos
+- automação de processos
+- análise de condições e regras
+
+Assim, o repositório funciona como um espaço para evolução contínua dos estudos em Lógica de Programação e Algoritmos.
 
 ## ▶️ Como executar
 
-1. Abra o terminal no diretório do projeto.
-2. Navegue até a pasta desejada.
-3. Execute o arquivo Python com o comando:
+1. Abra o terminal na pasta do projeto.
+2. Acesse a pasta desejada.
+3. Execute o script em Python usando:
 
 ```bash
 python nome_do_arquivo.py
@@ -100,24 +104,22 @@ python aula3/semaforo.py
 ## ⚙️ Requisitos
 
 - Python 3.x instalado
-- Terminal ou editor com suporte a Python
-- Conhecimento básico de linha de comando
+- Editor ou IDE com suporte a Python
+- Conhecimento básico de terminal
 
-## 🧠 Habilidades praticadas
+## 🧠 Habilidades trabalhadas
 
-- leitura e análise de problemas
-- estruturação de algoritmos
-- uso de condicionais
-- repetição com laços
-- criação de scripts úteis e automatizados
-- aplicação de lógica em cenários de IoT e automação
+- interpretação de problemas
+- criação de algoritmos
+- uso de estruturas condicionais
+- uso de laços de repetição
+- organização lógica do código
+- aplicação prática de automação e integração
 
 ## 📝 Observações
 
-Este projeto foi desenvolvido para fins de estudo e aprendizado acadêmico. Ele pode servir como material de revisão, prática e referência durante o curso.
+Este repositório foi criado para fins de estudo, prática e desenvolvimento acadêmico. Ele representa a evolução dos conteúdos de Lógica de Programação e Algoritmos e a integração entre as diferentes aulas do processo de aprendizagem.
 
 ## 👨‍💻 Autor
 
 Celso Ricardo de Carvalho
-
-Projeto pessoal/educacional desenvolvido para estudo e prática de programação.
