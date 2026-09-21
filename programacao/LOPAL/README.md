@@ -118,4 +118,6 @@ Este projeto foi desenvolvido para fins de estudo e aprendizado acadêmico. Ele 
 
 ## 👨‍💻 Autor
 
+Celso Ricardo de Carvalho
+
 Projeto pessoal/educacional desenvolvido para estudo e prática de programação.
